@@ -12,8 +12,11 @@ public class Ejercicio1 {
 		try {
 			System.out.println("Introduzca un texto para meterlo en un array de caracteres.");
 			textoChars=br.readLine().toLowerCase().toCharArray();
-			//ordenamos el array.
-			for (int i=0;i<textoChars.length;i++) {
+			//ordenamos el array. Metodo de la burbuja.
+
+			//No encontré el método que devuelve el array de chars ordenado.
+
+			for (int i=0;i<textoChars.length;i++) { //Puntero.
 				for (int j=textoChars.length-1;j>i;j--) {
 					if (textoChars[j]<textoChars[j-1]) {
 						char aux=textoChars[j-1];
@@ -25,15 +28,13 @@ public class Ejercicio1 {
 			}			
 			//Mostramos el array ordenado:
 			System.out.println("\n El array de chars ordenado es:");
-			//for (int i=0;i<textoChars.length;i++)  {
-			//	System.out.print("pos "+i+":"+textoChars[i]+", ");
-			//}
-			String txtResult=String.copyValueOf(textoChars);
+			String txtResult=new String(textoChars);
+			//String txtResult=String.copyValueOf(textoChars); //OTRA MANERA. 
+
 			System.out.print(txtResult); //Esto no funciona.
 			
 		} catch (Exception e) {
 			System.out.println ("Error al introducir el texto");
 		}
 	}
-
 }
