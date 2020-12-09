@@ -28,8 +28,9 @@ public class Ejercicio1 {
 			}			
 			//Mostramos el array ordenado:
 			System.out.println("\n El array de chars ordenado es:");
+			
 			String txtResult=new String(textoChars);
-			//String txtResult=String.copyValueOf(textoChars); //OTRA MANERA. 
+			//String txtResult=String.copyValueOf(textoChars); //OTRA MANERA de Hacerlo. 
 
 			System.out.print(txtResult); //Esto no funciona.
 			
